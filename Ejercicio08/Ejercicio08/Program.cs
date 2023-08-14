@@ -1,0 +1,31 @@
+﻿using System;
+
+namespace ArrayPosiciones
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Introduce la longitud del array:");
+            int longitud = Convert.ToInt32(Console.ReadLine());
+
+            int[] numeros = new int[longitud];
+
+            for (int i = 0; i < longitud; i++)
+            {
+                numeros[i] = i;
+            }
+
+            MostrarContenido(numeros);
+        }
+
+        static void MostrarContenido(int[] array)
+        {
+            Console.WriteLine("Contenido del array:");
+            foreach (int num in array)
+            {
+                Console.WriteLine(num);
+            }
+        }
+    }
+}
